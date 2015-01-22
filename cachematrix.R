@@ -5,10 +5,10 @@
 
 makeCacheMatrix:
 
-## To facilitate this caching, you first create a special
-## matrix that will help us with this by using the
+##  first create a special matrix that will help us with this by using the
 ## makeCacheMatrix function. The input into this function
 ## is simply a variable of type matrix.
+
 makeCacheMatrix <- function(x = matrix()) {
  inv <- NULL
  set <- function(y) {
@@ -26,8 +26,8 @@ setinverse <- function(inverse) inv <<- inverse
 
 cacheSolve:
 
-## Once you create this matrix, you use the cacheSolve
-## function to compute the inverse and cache the result
+##  use the cacheSolve function to compute the inverse matrix.
+
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
          inv <- x$getinverse()
